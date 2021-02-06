@@ -1,7 +1,11 @@
 const url = 'http://www.boredapi.com/api/activity/';
 
 
-funActivity();
+//funActivity();
+setInterval(() => {
+    funActivity();
+}, 10000);
+
 function funActivity() {
     fetch(url)
         .then(res => res.json())
